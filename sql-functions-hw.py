@@ -31,3 +31,4 @@ with sqlite3.connect('cars.db') as connection:
         print row[2]
         print row[3]
         print
+
