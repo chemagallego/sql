@@ -13,7 +13,7 @@ with sqlite3.connect('newnum.db') as connection:
                     """)
     
     for i in range(100):
-        rand_number = random.randint(0,1000)
+        rand_number = random.randint(0,100)
         c.execute("INSERT INTO numbers VALUES(?)", (rand_number,))
         #                                                     #,
         # Don't forget last "comma" to avoiding 'unsupported data type error'

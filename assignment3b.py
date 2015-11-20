@@ -36,6 +36,9 @@ with sqlite3.connect('newnum.db') as connection:
             c.execute(sql[4])
             print c.fetchone()[0]
         else:
-            False
+            print 'Exit'
+            break
+            
+        
 
         
